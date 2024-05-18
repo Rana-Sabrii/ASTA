@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brain Tumer Result</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename=('css/DetectionRes.css'))}}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<!-- content  i want to print -->
+<div  class="content"id="contentToPrint">
+  <h1>Result of Detection and Classification of Brain Tumor</h1>
+  <div class="result-info">
+    <div class="result-image">
+      <img src="data:image/jpg;base64,{{ image }}" alt="Uploaded Image"> 
+  </div>
+  <div class="result-text">
+      <p>You have:  {{ results }} </p>
+  </div>
+  </div>
+  
+ 
+ 
+  <div class="health-text"><p>It is all about your health, not just the diagnosis!
+    Since we at ASTA believe that health is the primary boon from Allah,
+    we would like to provide you with some educational resources to increase
+     your awareness of your health and the circumstances</p></div>
+     <i class="fa-solid fa-circle-down"></i>
+  <div class="helpful-info"><h2>American Brain Tumor Association<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>Information about brain tumors, treatment options, support resources, and research updates.</p> 
+    <span>Website : </span><a href="https://www.abta.org/">https://www.abta.org/</a>
+    <h2> National Brain Tumor Society<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>Resources on brain tumors, including types, symptoms, diagnosis, treatment, and patient support.</p> 
+    <span>Website : </span><a href="https://braintumor.org/">https://braintumor.org/</a>
+    <h2>Mayo Clinic<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>Comprehensive information about brain tumors, covering causes, symptoms, diagnosis, treatment, and coping strategies.</p> 
+    <span>Website : </span><a href="https://www.mayoclinic.org/diseases-conditions/brain-tumor/symptoms-causes/syc-20350084">https://www.mayoclinic.org/diseases-conditions/brain-tumor/symptoms-causes/syc-20350084</a>
+  </div>
+</div>
+
+
+
+<!--The button pf print-->
+<button onclick="printContentToPDF()">print</button>
+<!-- <i class="fa-solid fa-download"></i> -->
+</div>
+<script>
+function printContentToPDF() {
+  var element = document.getElementById('contentToPrint');
+  html2pdf()
+    .from(element)
+    .save("result.pdf");
+}
+</script>
+
+</body>
+</html>
