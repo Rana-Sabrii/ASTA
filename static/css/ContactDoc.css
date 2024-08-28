@@ -1,0 +1,220 @@
+body{
+    background: linear-gradient(to bottom, #687b8711, #5691a162);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: #f1e9e6ad;
+
+    /* background: linear-gradient(to bottom,#F1E9E6 60%,white 40%); */
+
+
+    
+    
+}
+img{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 5px;
+}
+.content h1{
+    text-align: center;
+    padding-top: 4%;
+    color:#104d52 ;
+}
+.contact-info{
+    display: flex;
+justify-content: space-between;
+margin-top: 5%;
+min-height: 200px;
+
+
+}
+.contact-one,.contact-two{
+    background: linear-gradient(to bottom, #687b8711, #5691a162);
+    width: 40%;
+    border-radius: 30px;
+    padding: 20px;
+    
+    /* background: #F1E9E6; */
+
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.contact-one p,.contact-two p{
+    text-align: center;
+    color:#104d52 ;
+    font-size: 25px;
+
+}
+.contact-multi-omics-doc,.contact-diabetic-doc{
+    width: 90%;
+    margin: auto;
+    /* border: double; */
+    min-height: 170px;
+    background: #7ba5aa;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    /* cursor: pointer; */
+}
+.contact-diabetic-doc p:first-child,.contact-multi-omics-doc  p:first-child
+{
+color:rgb(243, 233, 233);
+padding-top: 10px;
+letter-spacing: 0.8px;
+}
+
+.det-res-content,.pre-res-content{
+    overflow: auto;
+ padding: 0 5px 5px 5px;
+ margin-top:-15px;
+ /* max-width: 90%; */
+ overflow: auto;
+    
+}
+.fa-solid{
+    /* color:#a0acad; */
+    font-size: 25px;
+    padding-left: 10%;
+    color:#104d52 ;
+    padding-top: 2px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+strong{
+    font-size: 20px;
+}
+.contact-phone i,.email-contact i{
+    margin-right: 90%;
+}
+.contact-phone i{
+    margin-top: -1%;
+}
+.email-contact,.contact-phone{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 90%;
+}
+.email-contact span ,.contact-phone span{
+    margin-left: -80%;
+    color: rgb(243, 233, 233);
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.res-num{
+    text-transform: capitalize;
+
+
+
+}
+.email-contact,.contact-phone{
+    overflow: hidden;
+}
+.specialization{ /* Style the new specialization div */
+    display: flex; /* Align items within the div */
+    width: 90%;  /* Match the width of email-contact and contact-phone */
+    /* margin-left: -80%;  Remove this, it's too much */
+    color: rgb(243, 233, 233); /* Match the text color */
+    font-size: 22px; /* Match the font size */
+    margin-bottom: 15px; /* Match the bottom margin */
+}
+.specialization i { /* Style the icon within the div */
+    margin-right: 80%; /* Adjust margin to keep icon visible */
+    margin-top: -1%; /* Adjust as needed to match other icons */
+}
+.specialization span { /* Style the text within the div */
+    margin-left: -70%; /* Adjust margin to keep text visible */
+}
+
+/* media query */
+@media (max-width: 575.98px) {
+
+    .contact-info{
+        flex-direction: column;
+        justify-content: space-around;
+    
+    
+    }
+    .contact-one,.contact-two{
+       width: 80%;
+       margin: auto;
+       
+        
+    
+    }
+    .contact-two{
+        margin-top: 5%;
+    }
+    .contact-one p,.contact-two p{
+        font-size: 22px;
+    
+    
+    }
+    .fa-solid{
+        /* color:#a0acad; */
+        font-size: 12px;
+        padding-left: 10%;
+        color:#104d52 ;
+        padding-top: 2px;
+    
+    }
+    .email-contact span ,.contact-phone span{
+        margin-left: -80%;
+        color: rgb(243, 233, 233);
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .contact-multi-omics-doc,.contact-diabetic-doc{
+        width: 100%;
+        margin: auto;
+        /* border: double; */
+        min-height: 150px;
+        background: #7ba5aa;
+        border-radius: 20px;
+        /* cursor: pointer; */
+    }
+    .contact-one,.contact-two{
+        background: linear-gradient(to bottom, #687b8711, #5691a162);
+        min-width: 33%;
+        border-radius: 30px;
+        padding: 20px;
+        /* background: #F1E9E6; */
+    
+    }
+    .container{
+        width: 90%;
+    }
+
+}
+@media (max-width: 950px) {
+    .contact-one,.contact-two{
+        background: linear-gradient(to bottom, #687b8711, #5691a162);
+        min-width: 35%;
+        
+    
+    }
+    .container{
+        width: 95%;
+    }
+    .fa-solid{
+        /* color:#a0acad; */
+        font-size: 15px;
+        padding-left: 10%;
+        color:#104d52 ;
+        padding-top: 2px;
+    
+    }
+    .email-contact span ,.contact-phone span{
+       
+        font-size: 16px;
+       
+    }
+}

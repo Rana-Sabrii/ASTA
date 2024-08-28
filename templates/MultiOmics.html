@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .page-title {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-top: 20px;
+      
+    }
+    .disease-box {
+      text-align: center;
+      /* margin-bottom: 50px; */
+      padding: 40px 20px; /* Adjusted internal padding */
+      
+      border: 0.5px solid #b7c0c1;
+      box-shadow: 5px 5px 3px 3px #10494ec8;
+      border-radius: 30px;
+      height: auto; /* Adjusted height to be automatic */
+      
+    }
+    .disease-box img {
+      max-width: 100%;
+      min-height: 170px;
+    }
+    .btn {
+      background-color: #104d52;
+      height: 50px;
+      margin-top: 20px; /* Adjusted spacing between text and button */
+      border: none;
+      color: white;
+      
+      
+      border-radius: 10px;
+      width: 70%;
+    }
+    .btn:hover {
+      background: #5e868b;
+      color: white;
+    }
+    .Disease-image {
+      max-height: 100px;
+    }
+    body {
+      /* background: linear-gradient(to bottom,#F1E9E6 20%,white 80%); */
+      background: linear-gradient(to right, #F1E9E6 20%, white 80%);
+    }
+    .container{
+      margin-top: 6%;
+    }
+    
+    @media (min-width: 992px) {
+      .disease-box {
+        width: 300px; /* Adjusted width of the boxes */
+        margin: auto; /* Center the box horizontally */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="page-title">Multi Omics Integration</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-5"> <!-- Adjusted the class for each box -->
+        <div class="disease-box">
+          <img class="Disease-image" src="../static/images/pre1.png" alt="photo">
+          <h4 style="min-height: 100px;">Don't have your model? Train Your MOFA Model</h4> <!-- Adjusted text height -->
+          <a href="https://ranasabrii.shinyapps.io/Train-Interface/" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5">
+        <div class="disease-box">
+          <img class="Disease-image" src="../static/images/pre3.png" alt="photo">
+          <h4 style="min-height: 100px;">Already have your Model? Downstream Analysis Here</h4> <!-- Adjusted text height -->
+          <a href="https://ranasabrii.shinyapps.io/Downstream-Analysis/" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

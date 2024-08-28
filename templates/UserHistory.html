@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User History</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename=('css/UserHistory.css')) }}">
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Your Results History For AI Services</h1>
+    <div class="result-info">
+      <div class="result-two">
+        <p>Results of Detection and Classification</p>
+        <div class="Detection-result"> 
+          {% for result in results %}
+            <div class="result-entry">  <div class="contact-diabetic-doc">
+              <p class="res-num">Result for {{ result.Disease_name }} ({{ result.timestamp }})</p>
+              <p class="det-res-content">{{ result.Prediction_result }}</p> 
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

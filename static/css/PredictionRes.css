@@ -1,0 +1,170 @@
+body{
+    background: linear-gradient(to bottom, #687b8711, #5691a162);
+    
+    
+}
+
+
+.content{
+    margin: 30px;
+}
+.container{
+    width: 80%;
+    /* background-color: blueviolet; */
+    min-height: 100vh;
+    margin: auto;
+}
+.content h1{
+    text-align: center;
+    padding-top: 2%;
+    color:#104d52 ;
+}
+
+.result-text{
+    width: 30%;
+    min-height: 170px;
+    background-color:#7ba5aa;
+    /* background: rgb(71, 149, 156); */
+
+    box-shadow: 8px 8px 5px 5px #bbc4c69a;
+
+    border-radius: 30px;
+    
+    /* outline: dotted; */
+    /* border: 2px dashed;  */
+    color:white;
+    /* border:dotted; */
+    margin: auto;
+    margin-top: 34px;
+    
+}
+.result-text p{
+text-align: center;
+font-size:27px;
+padding-top: 15%;
+
+
+/* font-weight: bold; */
+}
+.helpful-info{
+    width: 70%;
+   min-height: 540px;
+    /* background: rgb(71, 149, 156); */
+    background-color:#7ba5aa;
+
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* padding-top: 5px; */
+    border-radius: 30px;
+    border:dashed 3px;
+}
+
+
+.helpful-info h2{
+    padding-top: 30px;
+}
+.helpful-info a{
+    color:#104d52 ;
+}
+.health-text{
+    width:50%;
+    margin: auto;
+   text-align: center;
+   font-size: 20px;
+}
+.health-text p{
+    color:#104d52;
+    padding-top: 15px;
+    
+}
+button{
+    background-color:#104d52;
+    color:white;
+   min-width:10%;
+    border-radius: 20px;
+    margin-left: 45%;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 8px 8px 5px 5px #bbc4c69a;
+
+
+}
+button:hover{
+    background: #0097a7;
+}
+.fa-solid{
+    color:#104d52 ;
+    font-size: 30px;
+    margin-left: 50%;
+}
+@media (max-width: 575.98px) {
+    
+    .fa-solid{
+        color:#104d52 ;
+        font-size: 30px;
+        margin-left: 48%;
+    }
+    .result-text p{
+        
+        font-size:18px;
+       
+        }
+        .result-image,.result-text{
+            width: 40%;
+            
+        }
+        button{
+            margin-left: 40%;
+            font-size: 25px;
+        }
+        .fa-brands{
+           font-size: 15px;
+        
+        }
+        .health-text{
+            width:70%;
+            
+           font-size: 16px;
+        }
+        .result-text{
+            min-height: 100px;
+        }
+  }
+  
+  /* For screens between 576px and 767px (e.g., larger smartphones in landscape mode) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .fa-solid{
+        color:#104d52 ;
+        font-size: 30px;
+        margin-left: 48%;
+    }
+    .result-text p{
+        
+        font-size:20px;
+       
+        }
+        .result-text{
+            min-height: 100px;
+        }
+
+        .result-image,.result-text{
+            width: 40%;
+            
+        }
+        button{
+            margin-left: 44%;
+            font-size: 25px;
+        }
+        .health-text{
+            width:70%;
+            
+           font-size: 18px;
+        }
+        
+  }
+  
+  

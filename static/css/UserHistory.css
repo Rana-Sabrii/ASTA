@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(to bottom, #687b8711, #5691a162);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: #f1e9e6ad; 
+}
+
+.content h1{
+    text-align: center;
+    padding-top: 4%;
+    color:#104d52 ;
+}
+
+.result-info{
+    margin-top: 5%;
+    min-height: 200px; 
+}
+
+.result-two{
+    background: linear-gradient(to bottom, #687b8711, #5691a162);
+    width: 70%;
+    margin: 20px auto; /* Adjusted margin for better spacing */
+    border-radius: 30px;
+    padding: 20px; 
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.result-two p{ /* Removed .resuit-one p, as it's not used in your HTML*/
+    text-align: center;
+    color:#104d52 ;
+    font-size: 25px;
+}
+
+/* Style the cards container (Detection-result) */
+.Detection-result {
+    display: flex;
+    flex-direction: column; /* Make items stack vertically */
+    /* flex-wrap: wrap;  Remove or comment out flex-wrap */
+    justify-content: center;
+    align-items: center;   /* Center cards horizontally */
+    gap: 20px;             
+  }
+
+/* Style each individual result card */
+.result-entry {
+    background: #7ba5aa; 
+    border-radius: 20px; 
+    padding: 20px;
+    width: calc(90% - 20px);   /* Adjust width to your preference */
+    margin-bottom: 20px;      
+    color: rgb(243, 233, 233);
+  }
+
+/* Optional: Adjust result-entry styles for smaller screens */
+@media (max-width: 768px) { 
+  .result-entry {
+    width: 100%; /* Make cards full width on smaller screens */
+  }
+}
+
+.contact-diabetic-doc{
+    width: 100%;
+}

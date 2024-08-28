@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detection Result</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename=('css/DetectionRes.css'))}}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<!-- content  i want to print -->
+<div  class="content"id="contentToPrint">
+  <h1>Result of Detection and Classification of Diabetic Retinopathy</h1>
+  <div class="result-info">
+    <div class="result-image">
+      <img src="data:image/png;base64,{{ image }}" alt="Uploaded Image">
+     
+    </div>
+    <div class="result-text">
+      <p>You are detected with:  {{ results }} </p>
+  </div>
+  </div>
+  
+            
+  
+   <!-- </div> -->
+ 
+ 
+ 
+  <div class="health-text"><p>It is all about your health, not just the diagnosis!
+    Since we at ASTA believe that health is the primary boon from Allah,
+    we would like to provide you with some educational resources to increase
+     your awareness of your health and the circumstances</p></div>
+     <i class="fa-solid fa-circle-down"></i>
+  <div class="helpful-info"><h2>American Academy of Ophthalmology (AAO)<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>AAO provides comprehensive information about diabetic retinopathy, including its causes, symptoms, diagnosis, treatment options, and prevention strategies.</p> 
+    <span>Website : </span><a href="https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy">https://www.aao.org/eye-health/diseases/what-is-diabetic-retinopathy</a>
+    <h2>National Eye Institute (NEI)<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>NEI, part of the National Institutes of Health (NIH), provides in-depth resources on diabetic retinopathy, including research updates, clinical trials,
+     patient education materials, and tips for preserving vision in diabetes.</p> 
+    <span>Website : </span><a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy">https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy</a>
+    <h2>Prevent Blindness<i class="fa-brands fa-periscope"></i><i class="fa-brands fa-periscope"></i></h2>
+   <p>Prevent Blindness offers educational content on diabetic retinopathy, focusing on early detection, treatment options, and support services available for individuals living with diabetes.</p> 
+    <span>Website : </span><a href="https://preventblindness.org/diabetic-retinopathy/">https://preventblindness.org/diabetic-retinopathy/</a>
+  </div>
+</div>
+
+
+
+<!--The button pf print-->
+<button onclick="printContentToPDF()">print</button>
+<!-- <i class="fa-solid fa-download"></i> -->
+</div>
+<script>
+function printContentToPDF() {
+  var element = document.getElementById('contentToPrint');
+  html2pdf()
+    .from(element)
+    .save("result.pdf");
+}
+</script>
+
+</body>
+</html>
